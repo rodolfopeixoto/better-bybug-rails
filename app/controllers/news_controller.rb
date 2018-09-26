@@ -4,6 +4,10 @@ class NewsController < ApplicationController
   # GET /news
   # GET /news.json
   def index
+    a = 1 + 2
+    binding.pry
+    b = a + 1
+    c = a + b
     logger.info('Logger created'.yellow)
     @news = News.all
   end
