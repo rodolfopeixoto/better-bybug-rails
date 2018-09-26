@@ -4,6 +4,7 @@ class NewsController < ApplicationController
   # GET /news
   # GET /news.json
   def index
+    logger.info('Logger created'.yellow)
     @news = News.all
   end
 
